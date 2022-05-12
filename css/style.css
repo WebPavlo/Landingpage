@@ -35,6 +35,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
 }
 ol, ul {
   list-style: none;
@@ -51,369 +53,208 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h1 {
-  color: #9DB0D1;
+
+
+.title {
+  color: #9DB0D1; 
+  font-family: 'Arapey', serif;
   font-size: 60px;
-  font-family: Arapey;
+  line-height: 66px;
   text-align: center;
-  top: 100px;
-  padding-top: 5%;
+  margin: 100px 0px 50px 0px;
 }
 
-h2 {
-  text-align: center;
-  padding-top: 2%;
+.subtitle {
   font-size: 20px;
   line-height: 24px;
+  text-align: center;
+  width: 950px;
+  margin: 0 auto 50px auto;
 }
 
-.button {
-  display: flex;
-  align-items: flex-start;
-  position: center;
-  margin: 2% 40%;
-  color: #fff;
-  font-family: Arapey;
-  font-size: 30px;
-  font-weight: regular;
-  text-transform: uppercase;
+.btn {
   background: #EBAC87;
-  border-radius: 10px;
-  border: 3px solid #fff;
+  color: #FFFFFF; 
+  border: 2px solid #ffffff
+  font-family: 'Arapey', serif;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
   padding: 24px 50px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  
+  cursor: pointer;
+}
+.btn-center{
+  margin: 0 auto 50px auto;
+  display: block;
 }
 
-/*.checkbox{
+.btn:hover {
+  background: #ffffff;
+  color: #EBAC87;
+  border: 2px solid #EBAC87;
+
+}
+ .navigation {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 48px 0;
+ }
+
+.link{
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  position: center;
-  margin: 2% 20%;
-  font-size: 15px;
-  font-family: Verdana;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 24px;
-  padding: 5px 50px;*/
-
-  /*.block {
-    height: 60px;
-    width: 240px;
-    display: inline-block;
-    
-
-  }
-
-  .container {
-    display: flex;
-    margin: 40px 350px;
-  }
-
-  .block1 {
-    background-image: #87C6EB;
-    box-sizing: 500px 1980px;
-  }*/
-
-  .clouds{
-    height: 400px;
-    width: 100%px;
-    background: linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
-
-    
-  }
-
-  .cbcontainer{
-  width: auto;
-  height: 60px;
-  display: flex;
-  margin: 130px;
-  margin-bottom: 1px;
-
+  margin: 0 25px 0 25px;
 }
 
-.checkbox{
-  height: 60px;
+.icon-chek {
+  background: #9DB0D1;
   width: 60px;
-  border-radius: 100px;
-  background:#9DB0D1;
-  margin-left: 50px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 17px 15px 18px 15px;
+  display: block;
+  margin: 0 15px 0 0;
+}
+.link:hover .icon-chek {
+  background: none;
 }
 
-.check{
-  padding-left: 15px;
-  padding-top: 17px;
+.link:hover .icon-chek svg * {
+  fill: #9DB0D1;
 }
 
-.checktext
-{
-  font-family: Verdana;
-  font-size: 20px;
-  padding-left: 15px;
-  padding-top: 17px;
-}
-
-.header2{
-height: 44px;
-width: 1200px;
-margin-left: 120px;
-margin-top:30px ;
-text-align: center;
-
-font-family: Arapey;
-font-size: 40px;
-
-}
-/*Блок 2*/
-
-
-
-
-  .container2  {
-display: flex;
-background: #87C6EB;
-width: 100%;
-height: auto;
-padding: 50px 0px 50px 0px;
+.caption {
+  font-family: 'Arapey', serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 44px;
+  padding: 252px 0 70px 0px;
+  background: url(../img/bg-clouds.png) top / auto 200px repeat-x,
+              linear-gradient(180deg, rgba(135, 198, 235, 0) 8.33%, #87C6EB 93.06%);
 
 }
 
-.box1 {
+.box{
   width: 350px;
-  height: 560px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
-  margin-left: 120px;
-  margin-top: 120px;
-   
-  
+  padding: 20px;
 }
 
-.box2 {
-  width: 350px;
-  height: 560px;
-  background: #FFFFFF;
-  border-radius: 10px;
-  margin-left: 120px;
-  margin-top: 120px
-   
-}
-.box3 {
-  width: 350px;
-  height: 560px;
-  background: #FFFFFF;
-  border-radius: 10px;
-  margin-left: 120px;
-  margin-top: 120px;
-  margin-right: 120px;
-   
-}
-
-.circle{
+.number {
   width: 60px;
   height: 60px;
-  border-radius: 100px;
-  margin: 20px;
-  background:#EBAC87;
-  opacity: 40%;  
-}
-.circle2{
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  margin: 20px;
-  background:#EBAC87;
-  opacity: 60%;  
-}
-.circle3{
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  margin: 20px;
-  background:#EBAC87;
-  opacity: 100%;  
-}
-
-.num 
-{
-  font-family: Verdana;
+  background: rgba(235, 172, 135, 0.4);
+  border-radius: 50%;
+  color: #ffffff;
   font-size: 30px;
-  color: white;
-  line-height: 36px;
-  
-  padding-left: 20px;
-  padding-top: 12px;
-  position: center;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 0 10px 0;
+}
+.medium {
+  background: rgba(235, 172, 135, 0.6);
 }
 
+.dark { 
+background: #EBAC87;}
 
-.img {
-  
-  width: 310px;
-  height: 310px;
-  background:#EBAC87;
-  background-image:url('../img/block 1.png');
-  background-size: cover;
-
-  
-  margin-top: 10px;
-  margin-left: 20px;
-}
-.img2 {
-  
-  width: 310px;
-  height: 310px;
-  background:#EBAC87;
-  background-image:url('../img/block 2.png');
-  background-size: cover;
-
-  
-  margin-top: 10px;
-  margin-left: 20px;
-}
-.img3 {
-  
-  width: 310px;
-  height: 310px;
-  background:#EBAC87;
-  background-image:url('../img/block 3.png');
-  background-size: cover;
-
-  
-  margin-top: 10px;
-  margin-left: 20px;
-}
-.card{
-  width: 310px;
-  height: 96px;
-  padding-top: 20px;
-  padding-left: 20px;
-  
-  font-family: Verdana;
-  font-size: 20px;
-  line-height: 24px;
-  }
-
-
-/*  конец блок 2*/
-
-/*3 блок*/
-
-.left  {
-width: 50%;
-height: auto;
+.image {
+  background: #EBAC87;
+  margin: 0 0 20px;
 }
 
-.conv {
-  margin-top: 50px;
-  height: 132px;
-  width: 950px;
+.image img {
+  width: 100%;
+  display: block;
+}
+
+.box-text strong{
+  font-weight: bold;
+
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto 35px auto;
+  justify-content: space-between;
+}
+
+.holder {
+  background: #87C6EB;
+}
+
+.container-bottom {
+  background: url(../img/goverla.png) bottom right / auto 475px no-repeat;
+  min-height: 475px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+}
+
+.heading {
+  width: 600px;
   font-family: Arapey;
   font-size: 40px;
+  line-height: 44px;
   color: #ffffff;
-  padding: 20px 120px;
- 
+  margin: 0 0 50px 0;
 }
 
-.comp{
-  width: 950px;
-  height: 73px;
-  font-family: Verdana;
-  line-height: 24px;
-  font-size: 20px;
-  padding: 20px 120px;
-  margin: 50px 0px 50px 0px;
-}
-.line{
-  text-decoration-line: underline;
+.container-bottom .box-text {
+  width: 580px;
+
 }
 
-.buttonwhite
-{
-  width: 280px;
-  height: 80px;
-  font-family: Arapey;
-  font-size: 30px;
+.text-link{
+  text-decoration: underline;
+  color: #000000;
+}
+
+.row {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+
+.btn-white {
+  background: #ffffff;
   color: #EBAC87;
-  border-radius: 10px;
-  border: 0px;
-  margin: 20px 120px;
-  margin-right: 0px;
-  padding: 24px 50px;
-  font-style: normal;
+  border: 2px solid transparent;
   
+
 }
 
-.container3  {
-display: flex;
-background: #87C6EB;
-background-image:url(https://i.ibb.co/VggH4fR/goverla.png);
-background-position: bottom right 120px;
-background-size: 600px 475px;
-background-repeat: no-repeat;
-width: 100%;
-height: auto;
-padding: 50px 0px 50px 0px;
-}
-
-.faq{
-border-radius: 100px;
-height: 80px;
-width: 80px;
-border: 0px;
-background: #EBAC87;
-margin-left: 920px;
-margin-top: 20px;
-
-font-size: 60px;
-font-family: Verdana;
-color: #FFFFFF;
-
-  
-  
-}
-
-.f {
-  display: flex;
-  width: 100%;
-  
-}
-/*конец блока 3*/
-
-/*footer*/
-
-
-
-.buttonf {
-  display: flex;
-  color: #fff;
-  font-family: Arapey;
-  font-size: 30px;
-  font-weight: regular;
-  text-transform: uppercase;
+.btn-white: hover {
   background: #EBAC87;
-  border-radius: 10px;
-  border: 3px solid #fff;
-  padding: 24px 50px;
-  margin-right: 0px;
-  width: 280px;
+  color: #FFFFFF; 
+  border: 2px solid #ffffff;
+}
+.faq {
+  width: 80px;
   height: 80px;
+  background: #EBAC87;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  line-height: 80px;
+  margin: 0 0 10px 0;
 
 }
 
-.footer {
-
-  margin: 50px 120px;
-  display:  flex;
-}
-
-.socialmedia{
-  display: flex;
-  margin-left: 900px;
-  margin-top: 30px;
-
-}
-
-.insta {
-
-  margin-left: 20px;
-  margin-right: 20px;
+.social a {
+  text-decoration: none;
+  margin: 0 0 0 32px;
 }
